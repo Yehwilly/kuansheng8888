@@ -133,6 +133,10 @@ th{background:var(--sun)}
 #campus{background:var(--peach);border-bottom:2px solid var(--ink)}
 #enroll{background:var(--band);color:var(--band-ink)}
 #enroll h2{color:var(--hl)}
+#enroll .btn{border-color:var(--band-ink);box-shadow:4px 4px 0 var(--band-ink)}
+#enroll .btn:hover{box-shadow:2px 2px 0 var(--band-ink)}
+#enroll ul{margin:0;padding-left:1.2em}
+.qr{display:block;width:180px;height:auto;background:#fff;padding:10px;border-radius:6px;margin-top:14px}
 @media (max-width:760px){
   .hero .wrap,.enroll,.feat{grid-template-columns:1fr}
   .levels{grid-template-columns:1fr}
@@ -149,7 +153,7 @@ th{background:var(--sun)}
   <div class="wrap">
     <a class="logo" href="#top">冠勝文理補習班</a>
     <nav aria-label="主選單">
-      <a href="#courses">課程</a><a href="#why">教學方式</a><a href="#schedule">課表</a><a href="#campus">環境</a><a href="#enroll">聯絡我們</a>
+      <a href="#courses">課程</a><a href="#why">教學方式</a><a href="#schedule">課表</a><a href="#campus">環境</a><a href="#enroll">免費試聽</a>
     </nav>
   </div>
 </header>
@@ -162,7 +166,7 @@ th{background:var(--sun)}
       <p class="lead">位於高雄前鎮的國小、國中、高中文理補習班。老師當天批改、當天講解，讓孩子不再帶著不會的題目回家。</p>
       <div class="btns">
         <a class="btn" href="#schedule">查看課表</a>
-        <a class="btn ghost" href="#enroll">聯絡我們</a>
+        <a class="btn ghost" href="#enroll">免費試聽</a>
       </div>
     </div>
     <div class="exam" aria-label="批改範例">
@@ -219,7 +223,7 @@ th{background:var(--sun)}
 <section id="schedule" class="alt">
   <div class="wrap">
     <h2>課表</h2>
-    <p class="sub">選擇年級查看課程與上課時段（時段為示範，請以櫃檯公告為準）。</p>
+    <p class="sub">選擇年級查看課程與上課時段，其他時段歡迎來電或到班詢問。</p>
     <div class="tabs" role="tablist" aria-label="年級">
       <button class="tab" role="tab" aria-selected="true" data-k="e">國小</button>
       <button class="tab" role="tab" aria-selected="false" data-k="j">國中</button>
@@ -243,11 +247,24 @@ th{background:var(--sun)}
 </section>
 
 <section id="enroll" class="alt">
-  <div class="wrap info">
+  <div class="wrap enroll">
+    <div>
+      <h2>免費試聽</h2>
+      <p>歡迎先來上一堂課，看看孩子適不適合我們的教學方式。</p>
+      <p>預約方式：來班、來電，或掃描 QR code 加入 LINE。</p>
+      <p><a class="btn" href="https://lin.ee/ljrbNyW" target="_blank" rel="noopener">用 LINE 預約</a></p>
+      <ul>
+        <li>需先預約。</li>
+        <li>為維護上課品質，上課超過 10 分鐘不得進班。</li>
+      </ul>
+    </div>
+    <div class="info">
       <h2>聯絡我們</h2>
-      <p>地址：高雄市前鎮區光華二路 163 號</p>
+      <p>地址：高雄市前鎮區光華二路 163 號（家樂福旁）</p>
       <p>電話：(07) 336-7789</p>
       <p>開放時間：週一、二、四、五 14:00–21:30；週三 15:00–21:30；週六、日休息</p>
+      <img class="qr" src="data:image/png;base64,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" alt="冠勝文理補習班 LINE QR code" width="180">
+    </div>
   </div>
 </section>
 </main>
@@ -257,9 +274,9 @@ th{background:var(--sun)}
 <script>
 (function(){
   var D={
-    e:[["科目","時段","備註"],["五、六年級數學","週二、週四 17:00–18:30","計算與應用題"],["英檢班","週六 09:00–11:00","聽說讀寫"]],
-    j:[["科目","時段","備註"],["數學","週一、週四 19:00–21:00","段考進度"],["英文","週二、週五 19:00–21:00","文法與閱讀"],["自然","週三 19:00–21:00","觀念與計算"],["國三會考複習班","週六 13:30–17:30","五科總複習"]],
-    s:[["科目","時段","備註"],["英文","週一、週四 19:00–21:00","字彙與長文閱讀"],["數學","週二、週五 19:00–21:30","觀念與題型"],["進度班","週三 19:00–21:30","配合學校進度"],["學測複習班","週六 09:00–12:00","考前總複習"]]
+    e:[["科目","時段","備註"],["五年級數學","週二、週五 16:30–18:30","計算與應用題"],["六年級數學","週二、週五 18:30–20:30","計算與應用題"],["英檢班","週三 16:00–18:30＋週六 10:00–12:30","每階段 32 堂課"]],
+    j:[["科目","時段","備註"],["國一生物","週一 17:40–20:40","國一課程"],["國一數學","週二 17:40–20:40","國一課程"],["國一英文","週四 17:40–20:40","國一課程"],["國二、國三（含會考複習班）","請洽櫃檯","依年級另行公告"]],
+    s:[["科目","時段","備註"],["英文、數學","請洽櫃檯","依年級與目標分班"],["進度班","請洽櫃檯","配合學校進度"],["學測複習班","請洽櫃檯","考前總複習"]]
   };
   var tbl=document.getElementById("tbl"),tabs=document.querySelectorAll(".tab");
   function draw(k){
