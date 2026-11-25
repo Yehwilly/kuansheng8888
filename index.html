@@ -15,20 +15,6 @@
   --serif:"Noto Serif TC","Songti TC","PMingLiU",serif;
   --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    color-scheme:dark;
-    --paper:#141B2B; --card:#1C2538; --ink:#EAF0FB; --muted:#A3AFC8; --grid:#25314A;
-    --hl:#FFD84D; --hl-ink:#1B2A4A; --red:#FF7A70; --line:#33415F;
-    --band:#0E1527; --band-ink:#EAF0FB; --sky:#1F3358; --sun:#4B4220; --peach:#4A2F28; --blue:#7DAEFF; --orange:#FF9F45;
-  }
-}
-:root[data-theme="dark"]{
-  color-scheme:dark;
-  --paper:#141B2B; --card:#1C2538; --ink:#EAF0FB; --muted:#A3AFC8; --grid:#25314A;
-  --hl:#FFD84D; --hl-ink:#1B2A4A; --red:#FF7A70; --line:#33415F;
-  --band:#0E1527; --band-ink:#EAF0FB; --sky:#1F3358; --sun:#4B4220; --peach:#4A2F28; --blue:#7DAEFF; --orange:#FF9F45;
-}
 :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:inherit}
